@@ -4,7 +4,8 @@ import { Cron, CronExpression } from '@nestjs/schedule';
 
 @Injectable()
 export class AppServiceUtils {
-  constructor(private prisma: PrismaService) {}
+  constructor() // private prisma: PrismaService
+  {}
 
   async getDataHelper(query: string): Promise<string> {
     return 'data';

@@ -8,6 +8,10 @@ import { ScheduleModule } from '@nestjs/schedule';
 @Module({
   imports: [ScheduleModule.forRoot()],
   controllers: [AppController],
-  providers: [AppService, AppServiceUtils, PrismaService],
+  providers: [
+    AppService,
+    AppServiceUtils,
+    // PrismaService
+  ],
 })
 export class AppModule {}

@@ -6,7 +6,7 @@ import { PrismaService } from './prisma.service';
 export class AppService {
   constructor(
     private appServiceUtils: AppServiceUtils,
-    private prisma: PrismaService,
+    // private prisma: PrismaService,
   ) {}
 
   async getData(query: string): Promise<string> {
